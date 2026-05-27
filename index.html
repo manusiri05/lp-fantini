@@ -517,6 +517,55 @@
       .strengths-grid { grid-template-columns: 1fr; }
       .hero-h1 { font-size: 2rem; }
     }
+
+    /* ── CAREER FORM ── */
+    .career-form-container {
+        max-width: 700px; margin: 0 auto; padding: 40px;
+        background: #fff; border-radius: 8px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+    .career-intro { text-align: center; margin-bottom: 30px; }
+    .career-intro h3 { color: #f37021; text-transform: uppercase; margin-bottom: 10px; font-weight: 700; font-family: var(--font-heading); font-size: 1.4rem; }
+    .career-intro p { font-size: 15px; color: #666; }
+    .career-form-container .form-row { display: flex; gap: 20px; margin-bottom: 0; }
+    .career-form-container .half { width: 50%; }
+    .career-form-container .full { width: 100%; }
+    .career-form-container .form-group { display: flex; flex-direction: column; margin-bottom: 20px; }
+    .career-form-container label { font-size: 12px; font-weight: 700; margin-bottom: 5px; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
+    .career-form-container input,
+    .career-form-container select,
+    .career-form-container textarea {
+        padding: 15px; border: 1px solid #ddd; border-radius: 4px;
+        background-color: #fff; font-size: 16px; width: 100%;
+        box-sizing: border-box; font-family: inherit;
+        transition: border 0.3s; appearance: none; -webkit-appearance: none;
+    }
+    .career-form-container input[type="file"] { padding: 12px 15px; font-size: 14px; color: #555; }
+    .career-form-container select {
+        background-image: url('data:image/svg+xml;utf8,<svg fill="%23f37021" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+        background-repeat: no-repeat; background-position: right 10px center;
+    }
+    .career-form-container input:focus,
+    .career-form-container select:focus,
+    .career-form-container textarea:focus { outline: none; border-color: #f37021; background: #fff; }
+    .career-form-container .form-footer { text-align: center; margin-top: 10px; }
+    #app-btn {
+        background-color: #f37021; color: white; border: none;
+        padding: 15px 50px; font-size: 16px; font-weight: 700;
+        text-transform: uppercase; border-radius: 4px; cursor: pointer;
+        transition: background 0.3s; width: 100%; font-family: var(--font-sans);
+    }
+    #app-btn:hover { background-color: #d65a0e; }
+    #app-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .whatsapp-box { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; }
+    .whatsapp-box p { font-size: 13px; color: #888; margin-bottom: 10px; }
+    .wa-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #25D366; color: white; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: background 0.3s; font-size: 14px; }
+    .wa-btn:hover { background-color: #1ebc57; }
+    @media (max-width: 600px) {
+        .career-form-container .form-row { flex-direction: column; gap: 0; }
+        .career-form-container .half { width: 100%; }
+        .career-form-container { padding: 24px 20px; }
+    }
   </style>
 </head>
 <body>
@@ -762,95 +811,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ═══════════════ FORM CANDIDATURA ═══════════════ -->
 <section id="candidatura">
-  <div class="section-inner">
-    <div class="candidatura-grid">
+  <div class="section-inner" style="padding: var(--pad) 0;">
 
-      <!-- Immagine sinistra -->
-      <div class="candidatura-img-col fade-in">
-        <img class="candidatura-img"
-          src="lp-fantini/Azienda_001-q35baJXNdXrtsHAgdPnNzA.jpg"
-          alt="Fantini Silvano – Sede" />
-      </div>
-
-      <!-- Form destra -->
-      <div class="candidatura-form-col fade-in">
-        <p class="form-eyebrow">Lavora con noi</p>
-        <h2 class="form-title">Invia la tua candidatura</h2>
-        <p class="form-subtitle">Compila il modulo per candidarti a una posizione aperta o per inviare una candidatura spontanea. Ti risponderemo al più presto.</p>
-
-        <form id="jobForm" class="f-grid" novalidate>
-
-          <div class="f-field">
-            <label for="nome">Nome <span class="req">*</span></label>
-            <input type="text" id="nome" placeholder="Mario" required />
-            <div class="field-error" id="errNome">Inserisci il tuo nome.</div>
-          </div>
-          <div class="f-field">
-            <label for="cognome">Cognome <span class="req">*</span></label>
-            <input type="text" id="cognome" placeholder="Rossi" required />
-            <div class="field-error" id="errCognome">Inserisci il tuo cognome.</div>
-          </div>
-
-          <div class="f-field f-full">
-            <label for="email">E-Mail <span class="req">*</span></label>
-            <input type="email" id="email" placeholder="mario.rossi@email.com" required />
-            <div class="field-error" id="errEmail">Inserisci un indirizzo e-mail valido.</div>
-          </div>
-
-          <div class="f-field f-full">
-            <label for="telefono">Telefono <span class="req">*</span></label>
-            <input type="tel" id="telefono" placeholder="+39 331 123 4567" required />
-            <div class="field-error" id="errTelefono">Inserisci il tuo numero di telefono.</div>
-          </div>
-
-          <div class="f-field f-full">
-            <label for="posizione">Posizione di interesse <span class="req">*</span></label>
-            <select id="posizione" required>
-              <option value="">Per quale ruolo ti candidi?</option>
-              <option value="frigorista">❄️ Tecnico Frigorista</option>
-              <option value="cad">📐 Disegnatore Tecnico / CAD</option>
-              <option value="amministrazione">💼 Amministrazione</option>
-              <option value="spontanea">🚀 Candidatura Spontanea</option>
-            </select>
-            <div class="field-error" id="errPosizione">Seleziona la posizione di interesse.</div>
-          </div>
-
-          <div class="f-field f-full">
-            <label for="messaggio">Messaggio / Presentazione</label>
-            <textarea id="messaggio" rows="4"
-              placeholder="Raccontaci di te, della tua esperienza e delle tue motivazioni…"></textarea>
-          </div>
-
-          <div class="privacy-row">
-            <input type="checkbox" id="privacy" required />
-            <label for="privacy">Ho letto la
-              <a href="https://www.fantinisilvano.com/images/pdf/privacy-policy-it.pdf" target="_blank">Privacy Policy</a>
-              e acconsento al trattamento dei miei dati personali per la gestione della candidatura. <span class="req">*</span>
-            </label>
-          </div>
-          <div class="privacy-error" id="errPrivacy">Accetta la privacy policy per continuare.</div>
-
-          <div class="success-msg" id="successMsg">
-            ✓ Grazie mille! La tua candidatura è stata inviata con successo. Ti contatteremo al più presto.
-          </div>
-
-          <button type="submit" class="submit-btn" id="sBtn">Invia candidatura</button>
-
-        </form>
-
-        <div class="whatsapp-hint">
-          <svg viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          <span>Domande?
-            <a href="https://wa.me/39335272299?text=Ciao%2C%20sono%20interessato%20a%20lavorare%20con%20voi!" target="_blank" rel="noopener">
-              Scrivici su WhatsApp
-            </a>
-          </span>
-        </div>
-      </div>
-
+<div class="career-form-container">
+    <div class="career-intro">
+        <h3>Lavora con noi</h3>
+        <p>Raccontaci chi sei e quale posizione ti interessa.</p>
     </div>
+    <form id="career-form">
+        <div class="form-row">
+            <div class="form-group half">
+                <label>Nome *</label>
+                <input type="text" id="app-firstname" required placeholder="Il tuo nome">
+            </div>
+            <div class="form-group half">
+                <label>Cognome *</label>
+                <input type="text" id="app-lastname" required placeholder="Il tuo cognome">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group half">
+                <label>Telefono *</label>
+                <input type="tel" id="app-phone" required placeholder="+39 ...">
+            </div>
+            <div class="form-group half">
+                <label>E-Mail</label>
+                <input type="email" id="app-email" placeholder="Opzionale">
+            </div>
+        </div>
+        <div class="form-group full">
+            <label>Posizione di interesse *</label>
+            <select id="app-position" required style="border-color: #ddd; background: #fff;">
+                <option value="" disabled selected>Per quale ruolo ti candidi?</option>
+                <option value="Tecnico Frigorista">❄️ Tecnico Frigorista</option>
+                <option value="Disegnatore Tecnico">📐 Disegnatore Tecnico / CAD</option>
+                <option value="Amministrazione">💼 Amministrazione</option>
+                <option value="Candidatura Spontanea">🚀 Candidatura Spontanea</option>
+            </select>
+        </div>
+        <div class="form-group full">
+            <label>Curriculum (CV) * <span style="font-size: 10px; color: #888; text-transform: none;">(PDF o Word)</span></label>
+            <input type="file" id="app-cv" accept=".pdf,.doc,.docx" required style="padding: 10px;">
+        </div>
+        <div class="form-group full">
+            <label>Messaggio / Presentazione</label>
+            <textarea id="app-message" rows="4" placeholder="Parlaci brevemente della tua esperienza..."></textarea>
+        </div>
+        <div class="form-footer">
+            <button type="submit" id="app-btn">INVIA CANDIDATURA</button>
+        </div>
+        <div class="whatsapp-box">
+            <p>Domande? Scrivici su WhatsApp:</p>
+            <a href="https://wa.me/39335272299?text=Ciao%2C%20sono%20interessato%20a%20lavorare%20con%20voi!" target="_blank" class="wa-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.698c.965.572 1.954.896 3.033.896h.002c3.181 0 5.768-2.586 5.769-5.766.001-3.18-2.587-5.767-5.768-5.767zm6.761 8.636c-.293 1.144-1.637 1.993-2.618 2.155-.989.162-2.126.152-3.874-.633-2.071-.929-3.415-3.085-3.518-3.226-.103-.142-.84-1.121-.84-2.138 0-1.017.514-1.517.697-1.724.183-.207.487-.26.649-.26.162 0 .324.001.465.009.143.008.335-.054.526.406.191.46.649 1.586.709 1.701.061.115.102.247.01.442-.092.195-.143.315-.284.478-.142.163-.296.363-.127.653.169.29.749 1.233 1.609 1.999 1.107.986 2.035 1.288 2.329 1.433.294.145.467.126.64-.075.174-.201.749-.871.95-1.171.201-.299.407-.25.68-.149.274.101 1.725.814 2.029.965.304.151.507.227.579.352.072.125.072.729-.221 1.873z"></path>
+                </svg>
+                WhatsApp Chat
+            </a>
+        </div>
+    </form>
+    <div id="app-success" style="display:none; text-align:center; color:#f37021;">
+        <h3>Grazie Mille!</h3>
+        <p>La tua candidatura è stata inviata. Ti contatteremo al più presto.</p>
+    </div>
+</div>
+
   </div>
 </section>
 
@@ -1011,115 +1036,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 
 // ── FORM SUBMISSION ──
-document.addEventListener('DOMContentLoaded', function(){
-
-  function showErr(id, show){
-    var el = document.getElementById(id);
-    if(el) el.style.display = show ? 'block' : 'none';
-  }
-  function markErr(id, err){
-    var el = document.getElementById(id);
-    if(el) el.classList.toggle('error', err);
-  }
-
-  function validate(){
-    var ok = true;
-    var nome = document.getElementById('nome').value.trim();
-    showErr('errNome', !nome); markErr('nome', !nome);
-    if(!nome) ok = false;
-
-    var cognome = document.getElementById('cognome').value.trim();
-    showErr('errCognome', !cognome); markErr('cognome', !cognome);
-    if(!cognome) ok = false;
-
-    var email  = document.getElementById('email').value.trim();
-    var eOk    = email && /\S+@\S+\.\S+/.test(email);
-    showErr('errEmail', !eOk); markErr('email', !eOk);
-    if(!eOk) ok = false;
-
-    var tel = document.getElementById('telefono').value.trim();
-    showErr('errTelefono', !tel); markErr('telefono', !tel);
-    if(!tel) ok = false;
-
-    var pos = document.getElementById('posizione').value;
-    showErr('errPosizione', !pos); markErr('posizione', !pos);
-    if(!pos) ok = false;
-
-    var pr = document.getElementById('privacy').checked;
-    showErr('errPrivacy', !pr);
-    if(!pr) ok = false;
-
-    return ok;
-  }
-
-  document.getElementById('jobForm').addEventListener('submit', function(ev){
-    ev.preventDefault();
-    if(!validate()) return;
-
-    var btn = document.getElementById('sBtn');
-    btn.disabled    = true;
-    btn.textContent = 'Invio in corso…';
-
-    var utm = window._getFantiniUtm ? window._getFantiniUtm() : {};
-
-    var payload = {
-      type:           'job_application',
-      source:         'google_ads_jobs_lp',
-      company:        'fantini-silvano',
-      first_name:     document.getElementById('nome').value.trim(),
-      last_name:      document.getElementById('cognome').value.trim(),
-      email:          document.getElementById('email').value.trim(),
-      phone:          document.getElementById('telefono').value.trim(),
-      position:       document.getElementById('posizione').value,
-      message:        document.getElementById('messaggio').value.trim(),
-      utm_source:     utm.utm_source||'',
-      utm_medium:     utm.utm_medium||'',
-      utm_campaign:   utm.utm_campaign||'',
-      utm_term:       utm.utm_term||'',
-      utm_content:    utm.utm_content||'',
-      device:         utm.device||'',
-      gclid:          utm.gclid||'',
-      gad_source:     utm.gad_source||'',
-      gad_campaignid: utm.gad_campaignid||''
-    };
-
-    // ── TODO: Replace FORM_ENDPOINT with your form handler ──
-    // e.g. "https://formsubmit.co/ajax/info@fantinisilvano.com"
-    //      "https://formspree.io/f/YOUR_FORM_ID"
-    //      or your own API endpoint
-    var FORM_ENDPOINT = '';
-
-    function onSuccess(){
-      document.getElementById('successMsg').style.display = 'block';
-      btn.style.display = 'none';
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event:    'job_application_success',
-        position: payload.position,
-        company:  'fantini-silvano'
-      });
-    }
-
-    if(!FORM_ENDPOINT){
-      // No endpoint set — show success state immediately (for testing)
-      setTimeout(onSuccess, 500);
-      return;
-    }
-
-    fetch(FORM_ENDPOINT, {
-      method:  'POST',
-      headers: {'Content-Type': 'application/json'},
-      body:    JSON.stringify(payload)
-    })
-    .then(function(r){ if(!r.ok) throw new Error('error'); return r.json(); })
-    .then(onSuccess)
-    .catch(function(){
-      btn.disabled    = false;
-      btn.textContent = 'Invia candidatura';
-      alert('Si è verificato un errore. Riprova o scrivici direttamente su WhatsApp.');
+    document.getElementById('career-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('app-btn');
+        const originalText = btn.innerText;
+        btn.innerText = "Invio in corso...";
+        btn.disabled = true;
+        const formData = new FormData();
+        formData.append('firstname', document.getElementById('app-firstname').value);
+        formData.append('lastname', document.getElementById('app-lastname').value);
+        formData.append('phone', document.getElementById('app-phone').value);
+        formData.append('email', document.getElementById('app-email').value);
+        formData.append('position', document.getElementById('app-position').value);
+        formData.append('message', document.getElementById('app-message').value);
+        formData.append('source', "Fantini Jobs Landingpage");
+        const cvFile = document.getElementById('app-cv').files[0];
+        if (cvFile) { formData.append('cv', cvFile); }
+        fetch("https://hook.eu1.make.com/tigpm2a96w45tbe8qa3m8eho3t4nsbk9", {
+            method: 'POST',
+            body: formData
+        }).then(r => {
+            if(r.ok) {
+                document.getElementById('career-form').style.display = 'none';
+                document.getElementById('app-success').style.display = 'block';
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({'event': 'bewerbung_gesendet'});
+            } else {
+                alert("Errore nell'invio. Per favore riprova o scrivici su WhatsApp.");
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        }).catch(err => {
+            console.error(err);
+            alert("Errore di connessione.");
+            btn.innerText = originalText;
+            btn.disabled = false;
+        });
     });
-  });
-});
 </script>
 
 </body>
