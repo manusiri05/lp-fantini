@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NP9VJSXS');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>Lavora con noi | Tecnico Frigorista &amp; Disegnatore CAD – Fantini Silvano Bolzano</title>
+  <meta name="description" content="Entra nel team Fantini Silvano a Bolzano! Cerchiamo Tecnici Frigoristi e Disegnatori CAD. Azienda solida dal 1970, crescita professionale e ottimo ambiente di lavoro in Alto Adige. Candidati ora!" />
+  <meta name="keywords" content="lavoro bolzano, fantini silvano jobs, tecnico frigorista, disegnatore tecnico, offerte lavoro alto adige, carriera bolzano" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Lavora con noi – Fantini Silvano Bolzano" />
+  <meta property="og:description" content="Entra nel team Fantini Silvano a Bolzano. Cerchiamo Tecnici Frigoristi e Disegnatori CAD. Azienda solida dal 1970." />
+  <meta property="og:type" content="website" />
+  <meta name="geo.placename" content="Bolzano" />
+
+  <!-- Fonts: Oswald (headings) + Montserrat (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #FFFFFF;
+      --bg-alt:       #F7F7F7;
+      --text:         #2B2929;
+      --text-mid:     #5B5858;
+      --text-light:   #9B9898;
+      --accent:       #2B2929;
+      --white:        #FFFFFF;
+      --border:       rgba(43,41,41,0.14);
+      --font-heading: 'Oswald', sans-serif;
+      --font-sans:    'Montserrat', system-ui, sans-serif;
+      --max-w:        1200px;
+      --pad:          96px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); color: var(--text); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* ── FADE-IN ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── HEADER ── */
+    #site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: 80px; display: flex; align-items: center;
+      background: rgba(255,255,255,0);
+      transition: background .4s, box-shadow .4s;
+    }
+    #site-header.scrolled {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 1px 24px rgba(43,41,41,0.1);
+    }
+    .header-inner {
+      max-width: var(--max-w); width: 100%; margin-inline: auto;
+      padding-inline: 40px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .header-logo img {
+      height: 46px; width: auto;
+      filter: brightness(0) invert(1);
+      transition: filter .4s;
+    }
+    #site-header.scrolled .header-logo img { filter: none; }
+
+    .header-nav { display: flex; align-items: center; gap: 32px; }
+    .header-nav a {
+      font-family: var(--font-sans); font-size: .72rem; font-weight: 500;
+      letter-spacing: .14em; text-transform: uppercase; text-decoration: none;
+      color: rgba(255,255,255,0.82); transition: color .3s;
+    }
+    #site-header.scrolled .header-nav a { color: var(--text-mid); }
+    .header-nav a:hover { color: var(--white) !important; }
+    #site-header.scrolled .header-nav a:hover { color: var(--text) !important; }
+
+    .btn-header {
+      display: inline-flex; align-items: center; padding: 10px 24px;
+      border: 1px solid rgba(255,255,255,0.65); background: transparent;
+      color: var(--white); font-family: var(--font-sans);
+      font-size: .70rem; font-weight: 600; letter-spacing: .18em;
+      text-transform: uppercase; text-decoration: none;
+      cursor: pointer; transition: all .25s;
+    }
+    #site-header.scrolled .btn-header {
+      border-color: var(--text); color: var(--text); background: var(--bg-alt);
+    }
+    .btn-header:hover { background: rgba(255,255,255,0.18) !important; }
+    #site-header.scrolled .btn-header:hover {
+      background: var(--text) !important; color: var(--white) !important;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative; height: 100vh; min-height: 600px;
+      display: flex; align-items: center; justify-content: center; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://jobs.fantinisilvano.com/images/1920_2016x1259_0_126/22651883/7-y3_0NzO2ld2xQ1M9IBLT6A.jpg');
+      background-size: cover; background-position: center;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0.55) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center; padding: 0 24px; max-width: 900px;
+    }
+    .hero-label {
+      font-family: var(--font-sans); font-size: .70rem; font-weight: 600;
+      letter-spacing: .3em; text-transform: uppercase;
+      color: rgba(255,255,255,0.68); margin-bottom: 18px;
+    }
+    .hero-h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      font-weight: 500; color: var(--white); line-height: 1.1; margin-bottom: 22px;
+      text-transform: uppercase;
+    }
+    .hero-sub {
+      font-family: var(--font-sans); font-size: clamp(.88rem, 1.4vw, 1rem);
+      color: rgba(255,255,255,0.82); max-width: 640px; margin: 0 auto 36px;
+      line-height: 1.75; font-weight: 400;
+    }
+    .btn-hero {
+      display: inline-block; padding: 15px 42px;
+      border: 1px solid rgba(255,255,255,0.85); background: transparent;
+      color: var(--white); font-family: var(--font-sans);
+      font-size: .76rem; font-weight: 600; letter-spacing: .2em;
+      text-transform: uppercase; text-decoration: none; transition: all .3s;
+    }
+    .btn-hero:hover { background: var(--white); color: var(--text); }
+
+    .hero-chevron {
+      position: absolute; bottom: 36px; left: 50%;
+      transform: translateX(-50%); z-index: 2;
+      color: rgba(255,255,255,0.65);
+      animation: bounce 2s ease-in-out infinite;
+      cursor: pointer; text-decoration: none;
+    }
+    .hero-chevron svg { width: 30px; height: 30px; }
+    @keyframes bounce {
+      0%,100%{ transform:translateX(-50%) translateY(0); }
+      50%{ transform:translateX(-50%) translateY(8px); }
+    }
+
+    /* ── SECTION COMMONS ── */
+    .section-inner {
+      max-width: var(--max-w); margin-inline: auto; padding-inline: 40px;
+    }
+    .section-label {
+      font-family: var(--font-sans); font-size: .66rem; font-weight: 600;
+      letter-spacing: .32em; text-transform: uppercase;
+      color: var(--text-light); margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      font-weight: 500; color: var(--text); line-height: 1.1;
+      margin-bottom: 20px; text-transform: uppercase;
+    }
+    .section-lead {
+      font-size: .92rem; color: var(--text-mid);
+      line-height: 1.8; max-width: 700px;
+    }
+    .divider {
+      width: 44px; height: 2px; background: var(--text); margin: 18px 0 28px;
+    }
+
+    /* ── CHI SIAMO ── */
+    #story { padding: var(--pad) 0; background: var(--bg); }
+    .story-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start;
+    }
+    .story-block { margin-top: 32px; }
+    .story-block h3 {
+      font-family: var(--font-heading); font-size: .95rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: .08em;
+      color: var(--text); margin-bottom: 10px;
+    }
+    .story-block p { font-size: .88rem; color: var(--text-mid); line-height: 1.82; }
+    .story-img {
+      width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block;
+    }
+
+    /* ── IL TEAM ── */
+    #team { padding: var(--pad) 0; background: var(--bg-alt); }
+    .team-header { margin-bottom: 52px; }
+    .team-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+    }
+    .team-card { background: var(--bg); overflow: hidden; }
+    .team-card-img {
+      width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;
+      transition: transform .5s ease;
+    }
+    .team-card:hover .team-card-img { transform: scale(1.03); }
+    .team-card-body { padding: 28px 28px 32px; overflow: hidden; }
+    .team-card-label {
+      font-size: .64rem; font-weight: 600; letter-spacing: .24em;
+      text-transform: uppercase; color: var(--text-light); margin-bottom: 8px;
+    }
+    .team-card-title {
+      font-family: var(--font-heading); font-size: 1.2rem; font-weight: 500;
+      color: var(--text); text-transform: uppercase; margin-bottom: 10px;
+    }
+    .team-card-text { font-size: .84rem; color: var(--text-mid); line-height: 1.72; }
+
+    /* ── PERCHÉ NOI ── */
+    #strengths { padding: var(--pad) 0; background: var(--bg); }
+    .strengths-header { margin-bottom: 52px; }
+    .strengths-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+    }
+    .strength-box {
+      padding: 36px 28px; background: var(--bg);
+      border: 1px solid var(--border); transition: box-shadow .3s, transform .3s;
+    }
+    .strength-box:hover {
+      box-shadow: 0 4px 28px rgba(43,41,41,0.09);
+      transform: translateY(-2px);
+    }
+    .strength-icon {
+      font-size: 1.7rem; display: block; margin-bottom: 18px; line-height: 1;
+    }
+    .strength-title {
+      font-family: var(--font-heading); font-size: .92rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--text); margin-bottom: 12px;
+    }
+    .strength-text { font-size: .83rem; color: var(--text-mid); line-height: 1.78; }
+
+    /* ── POSIZIONI APERTE ── */
+    #posizioni { padding: var(--pad) 0; background: var(--bg-alt); }
+    .posizioni-header { margin-bottom: 52px; }
+    .job-cards {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px;
+    }
+    .job-card { background: var(--bg); overflow: hidden; }
+    .job-card-num {
+      font-family: var(--font-heading); font-size: 2.8rem; font-weight: 300;
+      color: rgba(43,41,41,0.14); padding: 24px 28px 0; line-height: 1;
+    }
+    .job-card-img {
+      width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;
+      transition: transform .5s ease;
+    }
+    .job-card:hover .job-card-img { transform: scale(1.02); }
+    .job-card-body { padding: 24px 28px 0; }
+    .job-card-title {
+      font-family: var(--font-heading); font-size: 1.35rem; font-weight: 500;
+      text-transform: uppercase; color: var(--text); margin-bottom: 14px;
+    }
+    .job-expand-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-sans); font-size: .70rem; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--text); background: none; border: none;
+      cursor: pointer; padding: 0 0 22px; transition: gap .2s;
+    }
+    .job-expand-btn svg {
+      width: 14px; height: 14px;
+      transition: transform .3s ease;
+      flex-shrink: 0;
+    }
+    .job-expand-btn.open svg { transform: rotate(180deg); }
+
+    .job-details {
+      overflow: hidden; max-height: 0;
+      transition: max-height .45s ease;
+      padding: 0 28px;
+    }
+    .job-details.open { max-height: 480px; }
+    .job-details-inner { padding-bottom: 32px; }
+    .job-detail-block { margin-bottom: 18px; }
+    .job-detail-label {
+      font-size: .70rem; font-weight: 600; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--text);
+      display: block; margin-bottom: 8px;
+    }
+    .job-detail-block p {
+      font-size: .86rem; color: var(--text-mid); line-height: 1.75;
+    }
+    .job-detail-block ul { list-style: none; padding: 0; margin: 0; }
+    .job-detail-block ul li {
+      font-size: .86rem; color: var(--text-mid);
+      padding-left: 18px; position: relative;
+      margin-bottom: 5px; line-height: 1.6;
+    }
+    .job-detail-block ul li::before {
+      content: '—'; position: absolute; left: 0;
+      color: var(--text-light); font-size: .8rem;
+    }
+    .job-apply-btn {
+      display: inline-block; margin-top: 8px; padding: 11px 28px;
+      background: var(--text); color: var(--white);
+      font-family: var(--font-sans); font-size: .70rem;
+      font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+      text-decoration: none; transition: opacity .2s;
+    }
+    .job-apply-btn:hover { opacity: .78; }
+
+    /* ── FORM SECTION ── */
+    #candidatura { padding: var(--pad) 0; background: var(--bg); }
+    .candidatura-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start;
+    }
+    .candidatura-img {
+      width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;
+    }
+    .form-eyebrow {
+      font-family: var(--font-sans); font-size: .66rem; font-weight: 600;
+      letter-spacing: .32em; text-transform: uppercase;
+      color: var(--text-light); margin-bottom: 10px;
+    }
+    .form-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-weight: 500; text-transform: uppercase;
+      color: var(--text); margin-bottom: 8px;
+    }
+    .form-subtitle {
+      font-size: .86rem; color: var(--text-mid);
+      margin-bottom: 32px; line-height: 1.75;
+    }
+
+    .f-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .f-full { grid-column: span 2; }
+    .f-field label {
+      display: block; font-size: .68rem; font-weight: 600;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--text-mid); margin-bottom: 6px;
+    }
+    .f-field label .req { color: var(--text); }
+    .f-field input,
+    .f-field select,
+    .f-field textarea {
+      width: 100%; padding: 12px 14px;
+      border: 1px solid rgba(43,41,41,0.2);
+      font-size: .88rem; font-family: var(--font-sans);
+      color: var(--text); background: var(--bg);
+      transition: border-color .2s;
+      box-sizing: border-box; appearance: none; -webkit-appearance: none;
+    }
+    .f-field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232B2929' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+    }
+    .f-field input:focus,
+    .f-field select:focus,
+    .f-field textarea:focus { border-color: var(--text); outline: none; }
+    .f-field input.error,
+    .f-field select.error { border-color: #b94040 !important; }
+    .f-field .field-error {
+      font-size: .70rem; color: #b94040; margin-top: 4px; display: none;
+    }
+    .privacy-row {
+      grid-column: span 2; display: flex; align-items: flex-start; gap: 10px;
+      padding: 14px 16px; background: var(--bg-alt);
+      border: 1px solid var(--border);
+    }
+    .privacy-row input[type="checkbox"] {
+      width: 16px; min-width: 16px; height: 16px;
+      margin-top: 2px; cursor: pointer; accent-color: var(--text);
+    }
+    .privacy-row label {
+      font-size: .78rem; color: var(--text-mid);
+      cursor: pointer; line-height: 1.55;
+    }
+    .privacy-row label a { color: var(--text); text-decoration: underline; }
+    .privacy-error {
+      grid-column: span 2; font-size: .70rem;
+      color: #b94040; margin-top: -8px; display: none;
+    }
+    .success-msg {
+      display: none; grid-column: span 2;
+      background: #EFF7EC; border: 1px solid #A8CCA0;
+      padding: 16px; color: #2E6028; font-size: .88rem;
+      text-align: center; line-height: 1.6;
+    }
+    .submit-btn {
+      grid-column: span 2; width: 100%;
+      background: var(--text); color: var(--white);
+      padding: 16px; border: none; cursor: pointer;
+      font-family: var(--font-sans); font-size: .78rem;
+      font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+      margin-top: 8px; transition: opacity .2s;
+    }
+    .submit-btn:hover { opacity: .8; }
+    .submit-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+    .whatsapp-hint {
+      margin-top: 20px; padding: 14px 16px;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .whatsapp-hint svg { width: 22px; height: 22px; flex-shrink: 0; }
+    .whatsapp-hint span { font-size: .80rem; color: var(--text-mid); }
+    .whatsapp-hint a {
+      color: var(--text); font-weight: 600; text-decoration: none;
+    }
+    .whatsapp-hint a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    #footer {
+      padding: 80px 0 40px;
+      background: var(--text); color: rgba(255,255,255,0.65);
+    }
+    .footer-inner {
+      max-width: var(--max-w); margin-inline: auto; padding-inline: 40px;
+    }
+    .footer-logo { margin-bottom: 24px; }
+    .footer-logo img {
+      height: 50px; width: auto;
+      filter: brightness(0) invert(1); opacity: .82;
+    }
+    .footer-tagline {
+      font-size: .83rem; color: rgba(255,255,255,0.55);
+      max-width: 480px; margin-bottom: 44px; line-height: 1.75;
+    }
+    .footer-columns {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px; margin-bottom: 48px;
+    }
+    .footer-col-title {
+      font-family: var(--font-heading); font-size: .78rem; font-weight: 500;
+      text-transform: uppercase; letter-spacing: .18em;
+      color: rgba(255,255,255,0.88); margin-bottom: 16px;
+    }
+    .footer-nav-list { list-style: none; }
+    .footer-nav-list li { margin-bottom: 8px; }
+    .footer-nav-list a {
+      font-size: .82rem; color: rgba(255,255,255,0.55);
+      text-decoration: none; transition: color .2s;
+    }
+    .footer-nav-list a:hover { color: var(--white); }
+    .footer-contact-line {
+      font-size: .82rem; color: rgba(255,255,255,0.55); margin-bottom: 8px;
+    }
+    .footer-contact-line a {
+      color: rgba(255,255,255,0.55); text-decoration: none; transition: color .2s;
+    }
+    .footer-contact-line a:hover { color: var(--white); }
+    .footer-social {
+      display: flex; gap: 10px; margin-top: 16px;
+    }
+    .footer-social a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.55);
+      transition: all .2s; text-decoration: none;
+    }
+    .footer-social a:hover {
+      border-color: var(--white); color: var(--white);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-legal { font-size: .74rem; color: rgba(255,255,255,0.38); }
+    .footer-privacy a {
+      font-size: .74rem; color: rgba(255,255,255,0.38);
+      text-decoration: none; transition: color .2s;
+    }
+    .footer-privacy a:hover { color: rgba(255,255,255,0.7); }
+    .footer-seo {
+      font-size: .01px; color: transparent; opacity: 0; line-height: 0; height: 0; overflow: hidden;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .story-grid { grid-template-columns: 1fr; gap: 48px; }
+      .story-img-wrap { order: -1; }
+      .story-img { aspect-ratio: 16/9; }
+      .strengths-grid { grid-template-columns: repeat(2, 1fr); }
+      .candidatura-grid { grid-template-columns: 1fr; gap: 48px; }
+      .candidatura-img { aspect-ratio: 16/9; }
+      .footer-columns { grid-template-columns: 1fr 1fr; gap: 40px; }
+    }
+    @media (max-width: 768px) {
+      :root { --pad: 64px; }
+      .header-inner { padding-inline: 20px; }
+      .header-nav { display: none; }
+      .team-grid { grid-template-columns: 1fr; }
+      .job-cards { grid-template-columns: 1fr; }
+      .f-grid { grid-template-columns: 1fr; }
+      .f-full,
+      .privacy-row,
+      .submit-btn,
+      .success-msg,
+      .privacy-error { grid-column: span 1; }
+      .footer-columns { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .section-inner { padding-inline: 20px; }
+      .footer-inner { padding-inline: 20px; }
+    }
+    @media (max-width: 480px) {
+      :root { --pad: 48px; }
+      .strengths-grid { grid-template-columns: 1fr; }
+      .hero-h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP9VJSXS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#" class="header-logo">
+      <img
+        src="https://jobs.fantinisilvano.com/images/157/22665270/logo_fantini_no_background-wiw7hW44zhslDWJl7pA_iw.png"
+        alt="Fantini Silvano" />
+    </a>
+    <nav class="header-nav">
+      <a href="#story">L'Azienda</a>
+      <a href="#team">Il Team</a>
+      <a href="#strengths">Perché Noi</a>
+      <a href="#posizioni">Posizioni Aperte</a>
+    </nav>
+    <a href="#candidatura" class="btn-header">Candidati Ora</a>
+  </div>
+</header>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content fade-in">
+    <p class="hero-label">Fantini Silvano · Bolzano · Dal 1970</p>
+    <h1 class="hero-h1">Il tuo futuro inizia qui:<br>Entra nel team Fantini Silvano.</h1>
+    <p class="hero-sub">Cerchiamo tecnici qualificati e disegnatori per realizzare grandi progetti in tutto l'Alto Adige. Crescita, stabilità e un ambiente di lavoro eccellente.</p>
+    <a href="#posizioni" class="btn-hero">Vedi le posizioni aperte</a>
+  </div>
+  <a href="#story" class="hero-chevron" aria-label="Scorri verso il basso">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</section>
+
+<!-- ═══════════════ CHI SIAMO ═══════════════ -->
+<section id="story">
+  <div class="section-inner">
+    <div class="story-grid">
+      <div class="story-text fade-in">
+        <p class="section-label">Dal 1970</p>
+        <h2 class="section-title">Chi Siamo</h2>
+        <div class="divider"></div>
+        <p class="section-lead">Dal 1970 siamo il punto di riferimento per il settore alberghiero e della ristorazione. Quella che è iniziata come una piccola realtà si è trasformata in un'azienda solida con oltre 1.500 m² di sede e una squadra di 20 professionisti. Non vendiamo solo attrezzature: progettiamo soluzioni tecnologiche su misura.</p>
+        <div class="story-block">
+          <h3>Una realtà solida e in crescita</h3>
+          <p>Operiamo in esclusiva sul territorio locale e nazionale, garantendo attrezzature di elevata qualità. Grazie agli ottimi risultati, la nostra azienda si è strutturata nel tempo e oggi conta ben 20 collaboratori tra tecnici, progettisti, responsabili amministrativi e agenti. Offriamo un posto di lavoro sicuro in un ambiente dinamico.</p>
+        </div>
+        <div class="story-block">
+          <h3>Tecnologia e Progettazione</h3>
+          <p>Il cuore pulsante dell'azienda è il nostro ufficio tecnico. Non ci limitiamo alla vendita: ci occupiamo della progettazione dettagliata, dell'assistenza e del controllo lavori in cantiere. Utilizziamo le migliori tecnologie italiane ed estere per garantire ai nostri clienti un risultato sempre a regola d'arte.</p>
+        </div>
+      </div>
+      <div class="story-img-wrap fade-in">
+        <img class="story-img"
+          src="https://jobs.fantinisilvano.com/images/1024_1536x1537_0_246/22651928/a5-lFQPa4YufZAgPQwAIfNA0Q.jpg"
+          alt="Fantini Silvano – Azienda" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ IL TEAM ═══════════════ -->
+<section id="team">
+  <div class="section-inner">
+    <div class="team-header fade-in">
+      <p class="section-label">Le nostre persone</p>
+      <h2 class="section-title">Il Team</h2>
+      <div class="divider"></div>
+      <p class="section-lead">Il valore aggiunto della nostra azienda sono le persone. Siamo una squadra di 20 professionisti che unisce l'esperienza tecnica alla voglia di innovare. Lavoriamo in sinergia tra progettazione, cantiere e ufficio per garantire risultati eccellenti.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-in">
+        <img class="team-card-img"
+          src="https://jobs.fantinisilvano.com/images/1024_2048x2046_0_0/22665318/Gemini_Generated_Image_dptjt6dptjt6dptj-6Z9wjdj31FBBVDS1rn4g6g.png"
+          alt="Ufficio Tecnico" />
+        <div class="team-card-body">
+          <div class="team-card-label">Ufficio Tecnico</div>
+          <div class="team-card-title">Progettazione &amp; Design</div>
+          <p class="team-card-text">Qui nascono le idee. I nostri disegnatori e progettisti trasformano le esigenze dei clienti in progetti esecutivi dettagliati, utilizzando le più moderne tecnologie CAD.</p>
+        </div>
+      </div>
+      <div class="team-card fade-in">
+        <img class="team-card-img"
+          src="https://jobs.fantinisilvano.com/images/1024_2045x2048_1_0/22665311/Gemini_Generated_Image_x6mmcsx6mmcsx6mm-G-Op73yIiZ75N20G97iblA.png"
+          alt="Squadra Tecnica" />
+        <div class="team-card-body">
+          <div class="team-card-label">Squadra Tecnica</div>
+          <div class="team-card-title">Installazione &amp; Assistenza</div>
+          <p class="team-card-text">Il cuore operativo. I nostri tecnici specializzati (frigoristi ed elettricisti) si occupano dell'installazione in cantiere e dell'assistenza post-vendita.</p>
+        </div>
+      </div>
+      <div class="team-card fade-in">
+        <img class="team-card-img"
+          src="https://jobs.fantinisilvano.com/images/1024_2043x2048_2_0/22665323/Gemini_Generated_Image_wr39nvwr39nvwr39-Mw5V8SauxdoOxQzYwK1SnQ.png"
+          alt="Amministrazione" />
+        <div class="team-card-body">
+          <div class="team-card-label">Amministrazione</div>
+          <div class="team-card-title">Gestione &amp; Vendita</div>
+          <p class="team-card-text">Il supporto fondamentale. Dal primo contatto commerciale alla gestione amministrativa, questo reparto garantisce che tutto funzioni senza intoppi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PERCHÉ NOI ═══════════════ -->
+<section id="strengths">
+  <div class="section-inner">
+    <div class="strengths-header fade-in">
+      <p class="section-label">I vantaggi</p>
+      <h2 class="section-title">Perché lavorare con noi</h2>
+      <div class="divider"></div>
+      <p class="section-lead">Non offriamo solo un posto di lavoro, ma un ambiente dove puoi crescere professionalmente. Ecco cosa rende Fantini Silvano il posto giusto per te.</p>
+    </div>
+    <div class="strengths-grid">
+      <div class="strength-box fade-in">
+        <span class="strength-icon">🏢</span>
+        <div class="strength-title">Azienda Solida</div>
+        <p class="strength-text">Siamo attivi dal 1970. Ti offriamo un posto di lavoro sicuro in una realtà storica e ben radicata in Alto Adige.</p>
+      </div>
+      <div class="strength-box fade-in">
+        <span class="strength-icon">⚙️</span>
+        <div class="strength-title">Tecnologia Top</div>
+        <p class="strength-text">Lavorerai con attrezzature all'avanguardia, software moderni e marchi leader del settore.</p>
+      </div>
+      <div class="strength-box fade-in">
+        <span class="strength-icon">📚</span>
+        <div class="strength-title">Formazione</div>
+        <p class="strength-text">Il settore evolve e tu con noi. Offriamo corsi di aggiornamento e supporto per la tua crescita tecnica.</p>
+      </div>
+      <div class="strength-box fade-in">
+        <span class="strength-icon">👥</span>
+        <div class="strength-title">Team Unito</div>
+        <p class="strength-text">Siamo una squadra di 20 persone. Qui trovi collaborazione, rispetto e un clima lavorativo sereno.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ POSIZIONI APERTE ═══════════════ -->
+<section id="posizioni">
+  <div class="section-inner">
+    <div class="posizioni-header fade-in">
+      <p class="section-label">Unisciti a noi</p>
+      <h2 class="section-title">Posizioni Aperte</h2>
+      <div class="divider"></div>
+      <p class="section-lead">Siamo sempre alla ricerca di talenti. Se hai passione per la tecnica e voglia di crescere, ecco le opportunità attuali per entrare nel team Fantini Silvano.</p>
+    </div>
+    <div class="job-cards">
+
+      <!-- Posizione 01: Tecnico Frigorista -->
+      <div class="job-card fade-in">
+        <div class="job-card-num">01</div>
+        <img class="job-card-img"
+          src="https://jobs.fantinisilvano.com/images/1024/22665241/fantini_personal-FeHb_B1UdvLdeSgl-h33_g.png"
+          alt="Tecnico Frigorista Specializzato" />
+        <div class="job-card-body">
+          <div class="job-card-title">Tecnico Frigorista Specializzato</div>
+          <button class="job-expand-btn" data-job="1" aria-expanded="false">
+            Scopri di più
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="job-details" id="job-details-1">
+          <div class="job-details-inner">
+            <div class="job-detail-block">
+              <span class="job-detail-label">Il tuo ruolo</span>
+              <p>Installazione, manutenzione e riparazione di impianti di refrigerazione presso i nostri clienti (hotel, ristoranti) in tutto l'Alto Adige.</p>
+            </div>
+            <div class="job-detail-block">
+              <span class="job-detail-label">Requisiti fondamentali</span>
+              <ul>
+                <li>Patentino F-Gas (certificazione indispensabile)</li>
+                <li>Esperienza nel settore del freddo</li>
+                <li>Patente di guida B</li>
+              </ul>
+            </div>
+            <div class="job-detail-block">
+              <span class="job-detail-label">Cosa offriamo</span>
+              <p>Furgone aziendale attrezzato, ottima retribuzione e un posto di lavoro sicuro.</p>
+            </div>
+            <a href="#candidatura" class="job-apply-btn">Candidati per questo ruolo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Posizione 02: Disegnatore CAD -->
+      <div class="job-card fade-in">
+        <div class="job-card-num">02</div>
+        <img class="job-card-img"
+          src="https://jobs.fantinisilvano.com/images/1024_-180/22653044/cenanatale2025-wVR-bcxdrbWYWocYolYUPg.jpg"
+          alt="Disegnatore Tecnico CAD" />
+        <div class="job-card-body">
+          <div class="job-card-title">Disegnatore Tecnico / CAD</div>
+          <button class="job-expand-btn" data-job="2" aria-expanded="false">
+            Scopri di più
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="6,9 12,15 18,9" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="job-details" id="job-details-2">
+          <div class="job-details-inner">
+            <div class="job-detail-block">
+              <span class="job-detail-label">Il tuo ruolo</span>
+              <p>Progettazione dettagliata di impianti per cucine professionali e refrigerazione commerciale. Lavorerai a stretto contatto con il team tecnico per trasformare le esigenze dei clienti in progetti esecutivi.</p>
+            </div>
+            <div class="job-detail-block">
+              <span class="job-detail-label">Requisiti fondamentali</span>
+              <ul>
+                <li>Conoscenza di software CAD (AutoCAD, SolidWorks o simili)</li>
+                <li>Esperienza in progettazione tecnica o disegno industriale</li>
+                <li>Precisione, attenzione al dettaglio e orientamento al risultato</li>
+              </ul>
+            </div>
+            <div class="job-detail-block">
+              <span class="job-detail-label">Cosa offriamo</span>
+              <p>Ufficio moderno e attrezzato, formazione continua, retribuzione competitiva e reali opportunità di crescita professionale.</p>
+            </div>
+            <a href="#candidatura" class="job-apply-btn">Candidati per questo ruolo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FORM CANDIDATURA ═══════════════ -->
+<section id="candidatura">
+  <div class="section-inner">
+    <div class="candidatura-grid">
+
+      <!-- Immagine sinistra -->
+      <div class="candidatura-img-col fade-in">
+        <img class="candidatura-img"
+          src="https://jobs.fantinisilvano.com/images/1024/22647395/Azienda_001-q35baJXNdXrtsHAgdPnNzA.jpg"
+          alt="Fantini Silvano – Sede" />
+      </div>
+
+      <!-- Form destra -->
+      <div class="candidatura-form-col fade-in">
+        <p class="form-eyebrow">Lavora con noi</p>
+        <h2 class="form-title">Invia la tua candidatura</h2>
+        <p class="form-subtitle">Compila il modulo per candidarti a una posizione aperta o per inviare una candidatura spontanea. Ti risponderemo al più presto.</p>
+
+        <form id="jobForm" class="f-grid" novalidate>
+
+          <div class="f-field">
+            <label for="nome">Nome <span class="req">*</span></label>
+            <input type="text" id="nome" placeholder="Mario" required />
+            <div class="field-error" id="errNome">Inserisci il tuo nome.</div>
+          </div>
+          <div class="f-field">
+            <label for="cognome">Cognome <span class="req">*</span></label>
+            <input type="text" id="cognome" placeholder="Rossi" required />
+            <div class="field-error" id="errCognome">Inserisci il tuo cognome.</div>
+          </div>
+
+          <div class="f-field f-full">
+            <label for="email">E-Mail <span class="req">*</span></label>
+            <input type="email" id="email" placeholder="mario.rossi@email.com" required />
+            <div class="field-error" id="errEmail">Inserisci un indirizzo e-mail valido.</div>
+          </div>
+
+          <div class="f-field f-full">
+            <label for="telefono">Telefono <span class="req">*</span></label>
+            <input type="tel" id="telefono" placeholder="+39 331 123 4567" required />
+            <div class="field-error" id="errTelefono">Inserisci il tuo numero di telefono.</div>
+          </div>
+
+          <div class="f-field f-full">
+            <label for="posizione">Posizione di interesse <span class="req">*</span></label>
+            <select id="posizione" required>
+              <option value="">Per quale ruolo ti candidi?</option>
+              <option value="frigorista">❄️ Tecnico Frigorista</option>
+              <option value="cad">📐 Disegnatore Tecnico / CAD</option>
+              <option value="amministrazione">💼 Amministrazione</option>
+              <option value="spontanea">🚀 Candidatura Spontanea</option>
+            </select>
+            <div class="field-error" id="errPosizione">Seleziona la posizione di interesse.</div>
+          </div>
+
+          <div class="f-field f-full">
+            <label for="messaggio">Messaggio / Presentazione</label>
+            <textarea id="messaggio" rows="4"
+              placeholder="Raccontaci di te, della tua esperienza e delle tue motivazioni…"></textarea>
+          </div>
+
+          <div class="privacy-row">
+            <input type="checkbox" id="privacy" required />
+            <label for="privacy">Ho letto la
+              <a href="https://www.fantinisilvano.com/images/pdf/privacy-policy-it.pdf" target="_blank">Privacy Policy</a>
+              e acconsento al trattamento dei miei dati personali per la gestione della candidatura. <span class="req">*</span>
+            </label>
+          </div>
+          <div class="privacy-error" id="errPrivacy">Accetta la privacy policy per continuare.</div>
+
+          <div class="success-msg" id="successMsg">
+            ✓ Grazie mille! La tua candidatura è stata inviata con successo. Ti contatteremo al più presto.
+          </div>
+
+          <button type="submit" class="submit-btn" id="sBtn">Invia candidatura</button>
+
+        </form>
+
+        <div class="whatsapp-hint">
+          <svg viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>Domande?
+            <a href="https://wa.me/39335272299?text=Ciao%2C%20sono%20interessato%20a%20lavorare%20con%20voi!" target="_blank" rel="noopener">
+              Scrivici su WhatsApp
+            </a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img
+        src="https://jobs.fantinisilvano.com/images/157/22665270/logo_fantini_no_background-wiw7hW44zhslDWJl7pA_iw.png"
+        alt="Fantini Silvano" />
+    </div>
+    <p class="footer-tagline">Dal 1970 il punto di riferimento per la refrigerazione professionale e le grandi cucine in Alto Adige. Tecnologia, esperienza e un team sempre al tuo fianco.</p>
+
+    <div class="footer-columns">
+      <div>
+        <div class="footer-col-title">Contatti</div>
+        <p class="footer-contact-line"><a href="mailto:info@fantinisilvano.com">info@fantinisilvano.com</a></p>
+        <p class="footer-contact-line"><a href="mailto:pec@pec.fantinisilvano.com">pec@pec.fantinisilvano.com</a></p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/fantinisas" target="_blank" rel="noopener" title="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/fantinisas" target="_blank" rel="noopener" title="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="3"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/lorenzo-fantini-01b99957/" target="_blank" rel="noopener" title="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/user/FANTINIsas" target="_blank" rel="noopener" title="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#2B2929"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigazione</div>
+        <ul class="footer-nav-list">
+          <li><a href="#story">L'Azienda</a></li>
+          <li><a href="#team">Il Team</a></li>
+          <li><a href="#strengths">Perché Noi</a></li>
+          <li><a href="#posizioni">Posizioni Aperte</a></li>
+          <li><a href="#candidatura">Candidati Ora</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Dati Legali</div>
+        <p class="footer-contact-line">Fantini SRL</p>
+        <p class="footer-contact-line">P.iva: 02566730210</p>
+        <p class="footer-contact-line">REA BZ188274</p>
+        <p class="footer-contact-line" style="margin-top:12px">
+          <a href="https://www.fantinisilvano.com/images/pdf/privacy-policy-it.pdf" target="_blank">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-legal">© 2025 Fantini SRL · jobs.fantinisilvano.com</div>
+      <div class="footer-privacy">
+        <a href="https://www.fantinisilvano.com/images/pdf/privacy-policy-it.pdf" target="_blank">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="footer-seo">lavoro bolzano tecnico frigorista disegnatore cad offerte lavoro alto adige carriera fantini silvano refrigerazione professionale cucine industriali</div>
+  </div>
+</footer>
+
+<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<script>
+// ── HEADER SCROLL ──
+(function(){
+  var h = document.getElementById('site-header');
+  window.addEventListener('scroll', function(){
+    h.classList.toggle('scrolled', window.scrollY > 60);
+  }, {passive: true});
+})();
+
+// ── FADE-IN ON SCROLL ──
+(function(){
+  var els = document.querySelectorAll('.fade-in');
+  if(!window.IntersectionObserver){
+    els.forEach(function(e){ e.classList.add('visible'); });
+    return;
+  }
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.1});
+  els.forEach(function(el){ obs.observe(el); });
+})();
+
+// ── JOB ACCORDION ──
+(function(){
+  var btns = document.querySelectorAll('.job-expand-btn');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var jobId   = btn.dataset.job;
+      var details = document.getElementById('job-details-' + jobId);
+      var isOpen  = details.classList.contains('open');
+      // close all
+      document.querySelectorAll('.job-details').forEach(function(d){ d.classList.remove('open'); });
+      document.querySelectorAll('.job-expand-btn').forEach(function(b){
+        b.classList.remove('open');
+        b.setAttribute('aria-expanded', 'false');
+        b.firstChild.textContent = 'Scopri di più ';
+      });
+      if(!isOpen){
+        details.classList.add('open');
+        btn.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+
+// ── UTM CAPTURE ──
+(function(){
+  var UTM_KEY = 'fantini_jobs_utm';
+  var p   = new URLSearchParams(window.location.search);
+  var src = p.get('utm_source')||'';
+  var med = p.get('utm_medium')||'';
+  var gcl = p.get('gclid')||'';
+  if(src||med||gcl){
+    var content = p.get('utm_content')||'';
+    var device  = content.indexOf('_') !== -1 ? content.substring(content.lastIndexOf('_')+1) : '';
+    try{
+      localStorage.setItem(UTM_KEY, JSON.stringify({
+        utm_source:    src,
+        utm_medium:    med,
+        utm_campaign:  p.get('utm_campaign')||'',
+        utm_term:      p.get('utm_term')||'',
+        utm_content:   content,
+        device:        device,
+        gclid:         gcl,
+        gad_source:    p.get('gad_source')||'',
+        gad_campaignid:p.get('gad_campaignid')||''
+      }));
+    }catch(e){}
+  }
+  window._getFantiniUtm = function(){
+    try{ return JSON.parse(localStorage.getItem(UTM_KEY)||'{}'); }catch(e){ return {}; }
+  };
+})();
+
+// ── FORM SUBMISSION ──
+document.addEventListener('DOMContentLoaded', function(){
+
+  function showErr(id, show){
+    var el = document.getElementById(id);
+    if(el) el.style.display = show ? 'block' : 'none';
+  }
+  function markErr(id, err){
+    var el = document.getElementById(id);
+    if(el) el.classList.toggle('error', err);
+  }
+
+  function validate(){
+    var ok = true;
+    var nome = document.getElementById('nome').value.trim();
+    showErr('errNome', !nome); markErr('nome', !nome);
+    if(!nome) ok = false;
+
+    var cognome = document.getElementById('cognome').value.trim();
+    showErr('errCognome', !cognome); markErr('cognome', !cognome);
+    if(!cognome) ok = false;
+
+    var email  = document.getElementById('email').value.trim();
+    var eOk    = email && /\S+@\S+\.\S+/.test(email);
+    showErr('errEmail', !eOk); markErr('email', !eOk);
+    if(!eOk) ok = false;
+
+    var tel = document.getElementById('telefono').value.trim();
+    showErr('errTelefono', !tel); markErr('telefono', !tel);
+    if(!tel) ok = false;
+
+    var pos = document.getElementById('posizione').value;
+    showErr('errPosizione', !pos); markErr('posizione', !pos);
+    if(!pos) ok = false;
+
+    var pr = document.getElementById('privacy').checked;
+    showErr('errPrivacy', !pr);
+    if(!pr) ok = false;
+
+    return ok;
+  }
+
+  document.getElementById('jobForm').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if(!validate()) return;
+
+    var btn = document.getElementById('sBtn');
+    btn.disabled    = true;
+    btn.textContent = 'Invio in corso…';
+
+    var utm = window._getFantiniUtm ? window._getFantiniUtm() : {};
+
+    var payload = {
+      type:           'job_application',
+      source:         'google_ads_jobs_lp',
+      company:        'fantini-silvano',
+      first_name:     document.getElementById('nome').value.trim(),
+      last_name:      document.getElementById('cognome').value.trim(),
+      email:          document.getElementById('email').value.trim(),
+      phone:          document.getElementById('telefono').value.trim(),
+      position:       document.getElementById('posizione').value,
+      message:        document.getElementById('messaggio').value.trim(),
+      utm_source:     utm.utm_source||'',
+      utm_medium:     utm.utm_medium||'',
+      utm_campaign:   utm.utm_campaign||'',
+      utm_term:       utm.utm_term||'',
+      utm_content:    utm.utm_content||'',
+      device:         utm.device||'',
+      gclid:          utm.gclid||'',
+      gad_source:     utm.gad_source||'',
+      gad_campaignid: utm.gad_campaignid||''
+    };
+
+    // ── TODO: Replace FORM_ENDPOINT with your form handler ──
+    // e.g. "https://formsubmit.co/ajax/info@fantinisilvano.com"
+    //      "https://formspree.io/f/YOUR_FORM_ID"
+    //      or your own API endpoint
+    var FORM_ENDPOINT = '';
+
+    function onSuccess(){
+      document.getElementById('successMsg').style.display = 'block';
+      btn.style.display = 'none';
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event:    'job_application_success',
+        position: payload.position,
+        company:  'fantini-silvano'
+      });
+    }
+
+    if(!FORM_ENDPOINT){
+      // No endpoint set — show success state immediately (for testing)
+      setTimeout(onSuccess, 500);
+      return;
+    }
+
+    fetch(FORM_ENDPOINT, {
+      method:  'POST',
+      headers: {'Content-Type': 'application/json'},
+      body:    JSON.stringify(payload)
+    })
+    .then(function(r){ if(!r.ok) throw new Error('error'); return r.json(); })
+    .then(onSuccess)
+    .catch(function(){
+      btn.disabled    = false;
+      btn.textContent = 'Invia candidatura';
+      alert('Si è verificato un errore. Riprova o scrivici direttamente su WhatsApp.');
+    });
+  });
+});
+</script>
+
+</body>
+</html>
